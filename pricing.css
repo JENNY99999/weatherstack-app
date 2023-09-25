@@ -1,0 +1,1206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: "Open Sans", "Gill Sans MT", "Gill Sans", Corbel, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.top {
+    height: 500px;
+    width: 100%;
+    background: url(https://weatherstack.com/site_images/mountains.svg), linear-gradient(135deg, #1f4e69 0, #164058 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    font-family: Promo, Helvetica, Arial, sans-serif;
+
+}
+
+.middle {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.header {
+    position: relative;
+    width: 1140px;
+    height: 70px;
+}
+
+.mainlogo {
+    position: absolute;
+    height: 60px;
+    width: 260px;
+    margin-top: 25px;
+}
+
+.hr {
+    position: absolute;
+    width: 800px;
+    height: 60px;
+    right: 5px;
+    top: 5px;
+    text-align: right;
+
+}
+
+
+.hr ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hr ul li {
+    display: inline-block;
+    height: 60px;
+    margin: 0 10px;
+    font-size: 14px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.hr a {
+    text-decoration: none;
+    color: #ffffff;
+
+}
+
+.hr a:hover {
+    text-decoration: underline;
+}
+
+.login {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, .15);
+    width: 80px;
+    height: 40px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.signdown {
+    display: inline-block;
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 40px;
+    background-color: #f47b21;
+
+}
+
+.middle h1 {
+    text-align: center;
+    margin: 30px 0 20px;
+    color: #ffffff;
+    font-size: 32px;
+}
+
+.cycle {
+    width: 320px;
+    height: 40px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 5px;
+
+
+}
+
+.month {
+    position: relative;
+    background-color: #15394C;
+    width: 150px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 13px;
+    color: #ffffff;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+
+
+.month1 {
+    color: #ffffff;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #ffffff;
+    display: inline-block;
+    position: relative;
+    line-height: 15px;
+    text-align: center;
+    top: 0px;
+    left: -3px;
+}
+
+
+
+.year {
+    position: relative;
+    background-color: #ffffff;
+    width: 150px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 13px;
+    color: #253f59;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.year::before {
+    content: '√';
+    width: 15px;
+    height: 15px;
+    border: 1px solid black;
+    display: inline-block;
+    position: relative;
+    line-height: 15px;
+    text-align: center;
+    top: 0px;
+    left: -3px;
+}
+
+
+.discount {
+    position: absolute;
+    left: 120px;
+    top: -14px;
+    width: 88px;
+    height: 22px;
+    background-color: #8a9bae;
+    color: #ffffff;
+    font-size: 12px;
+    text-align: center;
+    line-height: 22px;
+    border-radius: 5px;
+}
+
+.price {
+    display: flex;
+    justify-content: center;
+    height: 755px;
+    margin-top: 150px;
+    color: #16222f;
+}
+
+.freeup h1::before {
+    content: '\f0c2';
+    font: var(--fa-font-solid);
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.stanup h1::before {
+    content: '\f6c4';
+    font: var(--fa-font-solid);
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.proup h1::before {
+    content: '\f185';
+    font: var(--fa-font-solid);
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.busup h1::before {
+    content: '\f2dc';
+    font: var(--fa-font-solid);
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.entup h1::before {
+    content: '\f64f';
+    font: var(--fa-font-solid);
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+
+
+.price>div {
+    width: 225px;
+    margin: 0 5px;
+}
+
+.freeup {
+    position: relative;
+    width: 223px;
+    height: 325px;
+    background-color: #ebeff4;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.freeup h1 {
+    font-size: 18px;
+    color: #16222f;
+    padding: 25px 0 15px;
+}
+
+.freeup p {
+    height: 100px;
+    padding: 15px;
+    font-size: 12px;
+}
+
+.freeup span {
+    font-size: 20px;
+
+}
+
+.freeup .sp {
+    position: absolute;
+    left: 50%;
+    margin-left: -95px;
+    bottom: 10px;
+    height: 40px;
+    width: 190px;
+    background-color: #DDE1E7;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.freeup .sp a {
+    text-decoration: none;
+    line-height: 40px;
+    color: #848484;
+}
+
+.freeup .sp:hover {
+    text-decoration: underline;
+}
+
+.freedown {
+    width: 223px;
+    height: 550px;
+    background-color: #fff;
+    border-right: 1px solid #DDE1E7;
+    margin-top: 10px;
+}
+
+.freedown ul li {
+    font-size: 14px;
+    padding: 15px 10px 18px;
+
+}
+
+.freedown ul li i {
+    margin-right: 10px;
+}
+
+
+
+.stanup {
+    position: relative;
+    width: 223px;
+    height: 325px;
+    background-color: #ebeff4;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.stanup h1 {
+    font-size: 18px;
+    color: #16222f;
+    padding: 25px 0 15px;
+}
+
+.stanup p {
+    height: 100px;
+    padding: 15px;
+    font-size: 12px;
+}
+
+.stanup span {
+    font-size: 20px;
+}
+
+.stanup span::after {
+    content: ".99";
+    display: inline-block;
+    position: relative;
+    top: -0.5em;
+    left: 0.1em;
+    font-size: 0.7em;
+}
+
+
+
+.stanup .sp {
+    position: absolute;
+    left: 50%;
+    margin-left: -95px;
+    bottom: 10px;
+    height: 40px;
+    width: 190px;
+    background-color: #DDE1E7;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.stanup .sp a {
+    text-decoration: none;
+    line-height: 40px;
+    color: #848484;
+}
+
+.stanup .sp:hover {
+    text-decoration: underline;
+}
+
+.standown {
+    width: 223px;
+    height: 550px;
+    background-color: #fff;
+    border-right: 1px solid #DDE1E7;
+    margin-top: 10px;
+}
+
+.standown ul li {
+    font-size: 14px;
+    padding: 15px 13px 18px;
+}
+
+.standown ul li i {
+    margin-right: 10px;
+}
+
+.stanup .bill {
+    height: 17px;
+    font-size: 12px;
+    color: #00000066;
+    margin: 5px 0;
+}
+
+
+
+.proup {
+    position: relative;
+    width: 223px;
+    height: 325px;
+    background-color: #ebeff4;
+    text-align: center;
+}
+
+.protop {
+    position: absolute;
+    top: -30px;
+    width: 223px;
+    height: 30px;
+    background-color: #15394c;
+    color: #ffffff;
+    line-height: 30px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.proup h1 {
+    font-size: 18px;
+    color: #16222f;
+    padding: 25px 0 15px;
+}
+
+.proup p {
+    height: 100px;
+    padding: 15px;
+    font-size: 12px;
+}
+
+.proup span {
+    display: inline-block;
+    font-size: 20px;
+}
+
+.proup span::after {
+    content: ".99";
+    display: inline-block;
+    position: relative;
+    top: -0.5em;
+    left: 0.1em;
+    font-size: 0.7em;
+}
+
+
+
+
+.proup .sp {
+    position: absolute;
+    left: 50%;
+    margin-left: -95px;
+    bottom: 10px;
+    height: 40px;
+    width: 190px;
+    background-color: #15394c;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.proup .sp a {
+    text-decoration: none;
+    line-height: 40px;
+    color: #ffffff;
+}
+
+.proup .sp:hover {
+    text-decoration: underline;
+}
+
+.prodown {
+    width: 223px;
+    height: 550px;
+    background-color: #fff;
+    border-right: 1px solid #DDE1E7;
+    margin-top: 10px;
+}
+
+.prodown ul li {
+    font-size: 14px;
+    padding: 15px 13px 18px;
+}
+
+.prodown ul li i {
+    margin-right: 10px;
+}
+
+.proup .bill {
+    height: 17px;
+    font-size: 12px;
+    color: #00000066;
+    margin: 5px 0;
+}
+
+
+
+.busup {
+    position: relative;
+    width: 223px;
+    height: 325px;
+    background-color: #ebeff4;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.busup h1 {
+    font-size: 18px;
+    color: #16222f;
+    padding: 25px 0 15px;
+}
+
+.busup p {
+    height: 100px;
+    padding: 15px;
+    font-size: 12px;
+}
+
+.busup span {
+    font-size: 20px;
+}
+
+.busup span::after {
+    content: ".99";
+    display: inline-block;
+    position: relative;
+    top: -0.5em;
+    left: 0.1em;
+    font-size: 0.7em;
+}
+
+
+
+.busup .sp {
+    position: absolute;
+    left: 50%;
+    margin-left: -95px;
+    bottom: 10px;
+    height: 40px;
+    width: 190px;
+    background-color: #DDE1E7;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.busup .sp a {
+    text-decoration: none;
+    line-height: 40px;
+    color: #848484;
+}
+
+.busup .sp:hover {
+    text-decoration: underline;
+}
+
+.busdown {
+    width: 223px;
+    height: 550px;
+    background-color: #fff;
+    margin-top: 10px;
+}
+
+.busdown ul li {
+    font-size: 14px;
+    padding: 15px 13px 18px;
+}
+
+.busdown ul li i {
+    margin-right: 10px;
+}
+
+.busup .bill {
+    height: 17px;
+    font-size: 12px;
+    color: #00000066;
+    margin: 5px 0;
+}
+
+
+
+
+
+.entup {
+    position: relative;
+    width: 223px;
+    height: 325px;
+    background-color: #15394c;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    text-align: center;
+
+}
+
+.entup h1 {
+    font-size: 18px;
+    color: #ffffff;
+    padding: 25px 0 15px;
+}
+
+.entup p {
+    height: 100px;
+    padding: 15px;
+    font-size: 12px;
+    color: #ffffff;
+}
+
+.entup span {
+    font-size: 20px;
+    color: #ffffff;
+}
+
+
+
+
+.entup .sp {
+    position: absolute;
+    left: 50%;
+    margin-left: -95px;
+    bottom: 10px;
+    height: 40px;
+    width: 190px;
+    background-color: #f47b21;
+    font-size: 14px;
+    border-radius: 5px;
+
+}
+
+.entup .sp a {
+    text-decoration: none;
+    line-height: 40px;
+    color: #ffffff;
+}
+
+.entup .sp:hover {
+    text-decoration: underline;
+}
+
+.entdown {
+    width: 223px;
+    height: 550px;
+    background-color: #15394c;
+    padding-top: 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.entdown ul li {
+    font-size: 14px;
+    padding: 15px 25px 18px;
+    color: #ffffff;
+}
+
+.entdown ul li i {
+    margin-right: 10px;
+}
+
+.entup .bill {
+    height: 17px;
+    font-size: 12px;
+    margin: 5px 0 5px;
+    color: #ffffff;
+}
+
+.company {
+    padding: 25px 12px;
+    background: #ffffff;
+    height: 100px;
+    margin: 800px 0 30px 0;
+}
+
+.company ul {
+    width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.company ul li.happy {
+    width: 185px;
+    height: 50px;
+    text-align: center;
+    line-height: 52px;
+    font-size: 16px;
+}
+
+
+.company ul li.deloitte {
+    width: 120px;
+    background: url(https://weatherstack.com/site_images/client_deloitte.svg);
+    background-size: 120px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.company ul li.microsoft {
+    background: url(https://weatherstack.com/site_images/client_microsoft.svg);
+    width: 135px;
+    background-size: 120px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.company ul li.wb {
+    background: url(https://weatherstack.com/site_images/client_warnerbros.svg);
+    width: 110px;
+    background-size: 48px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.company ul li.wawa {
+    background: url(https://weatherstack.com/site_images/client_wawa.svg);
+    width: 132px;
+    background-size: 85px;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.company ul li.schneider {
+    background: url(https://weatherstack.com/site_images/client_schneider.svg);
+    width: 132px;
+    background-size: 125px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.company ul li.ericsson {
+    background: url(https://weatherstack.com/site_images/client_ericsson_2.svg);
+    width: 112px;
+    background-position: center;
+    background-size: 55px;
+    background-repeat: no-repeat;
+}
+
+.feature {
+    width: 100%;
+    height: 1350px;
+    background: #eff2f5 url(https://weatherstack.com/site_images/world_map_vector_objects.svg);
+    padding: 50px 0 40px;
+    background-size: 950px;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-position-y: 110px;
+    text-align: center;
+}
+
+.featurecenter {
+    width: 1140px;
+    height: 1343px;
+    margin: 0 auto;
+}
+
+.featurecenter h4 {
+    display: block;
+    font-size: 25px;
+    margin: 5px 0;
+}
+
+.real,
+.loca,
+.astr,
+.hour,
+.hist,
+.weat,
+.mult,
+.bulk {
+    position: relative;
+    width: 1000px;
+    height: 65px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.real {
+    border-top: 2px dashed #dde2e6;
+    margin-top: 260px;
+    margin-bottom: 100px
+}
+
+
+.featurecenter h3 {
+    width: 800px;
+    height: 22.39px;
+    font-size: 18px;
+    margin: 50px 0 0 140px;
+    font-weight: 500;
+}
+
+.featurecenter p {
+    width: 500px;
+    height: 40px;
+    font-size: 14px;
+    margin-left: 140px;
+}
+
+.real .include {
+    position: absolute;
+    width: 240px;
+    height: 82px;
+    right: 20px;
+    top: 50px;
+    border-left: 2px dashed #dde2e6;
+
+
+}
+
+.include {
+    position: absolute;
+    width: 240px;
+    height: 82px;
+    right: 20px;
+    top: 0px;
+    border-left: 2px dashed #dde2e6;
+
+
+}
+
+.inc1 {
+    width: 80px;
+    height: 23px;
+    font-size: 12px;
+    font-weight: bold;
+    background: #416376;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+    line-height: 23px;
+    margin-left: 50px;
+}
+
+.inc2 {
+    height: 19px;
+    width: 200px;
+    font-size: 14px;
+    color: #000000;
+    line-height: 19px;
+    margin: 10px 0 0 50px;
+}
+
+.real::before {
+    content: '\f0ee';
+    font: var(--fa-font-solid);
+    font-size: 50px;
+    color: #a4b6c5;
+    position: absolute;
+    left: 12px;
+    top: 48px;
+
+}
+
+.loca::before {
+    content: '\f08d';
+    font: var(--fa-font-solid);
+    font-size: 50px;
+    color: #a4b6c5;
+    position: absolute;
+    left: 18px;
+    top: 0px;
+}
+
+.astr::before {
+    content: '\f042';
+    font: var(--fa-font-solid);
+    font-size: 50px;
+    color: #a4b6c5;
+    position: absolute;
+    left: 12px;
+    top: 0px;
+}
+
+.hour::before {
+    content: '\f017';
+    font: var(--fa-font-solid);
+    font-size: 50px;
+    color: #a4b6c5;
+    position: absolute;
+    left: 12px;
+    top: 0px;
+}
+
+.hist::before {
+    content: '\f1da';
+    font: var(--fa-font-solid);
+    font-size: 50px;
+    color: #a4b6c5;
+    position: absolute;
+    left: 12px;
+    top: 0px;
+}
+
+.weat::before {
+    content: '\f185';
+    font: var(--fa-font-solid);
+    font-size: 50px;
+    color: #a4b6c5;
+    position: absolute;
+    left: 12px;
+    top: 0px;
+}
+
+.mult::before {
+    content: '\f024';
+    font: var(--fa-font-solid);
+    font-size: 50px;
+    color: #a4b6c5;
+    position: absolute;
+    left: 12px;
+    top: 0px;
+}
+
+.bulk::before {
+    content: '\f5fd';
+    font: var(--fa-font-solid);
+    font-size: 50px;
+    color: #a4b6c5;
+    position: absolute;
+    left: 12px;
+    top: 0px;
+}
+
+
+
+.faq {
+    width: 100%;
+    height: 800px;
+
+}
+
+.faq .container {
+    width: 1140px;
+    height: 754px;
+    margin: 20px auto;
+
+
+}
+
+.faq .container h2 {
+    width: 1140px;
+    height: 80px;
+    font-size: 25px;
+    text-align: center;
+    line-height: 80px;
+
+}
+
+.faq .container .topic {
+    margin: 0 auto 35px;
+    text-align: left;
+}
+
+.faq .container .topic h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #949494;
+    line-height: normal;
+    font-weight: 300;
+    font-family: Promo, Helvetica, Arial, sans-serif;
+    margin-left: 0;
+}
+
+.faq .container .topic ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.faq .container .topic li {
+    display: list-item;
+}
+
+.faq .container .topic li .question {
+    width: 500px;
+    height: 41px;
+    position: relative;
+    font-weight: 600;
+    margin: 0;
+    padding: 10px 0;
+    border-bottom: 1px solid #dedee1;
+    cursor: pointer;
+}
+
+.faq .container .topic li .question::after {
+    content: '\2b';
+    font: var(--fa-font-solid);
+    position: absolute;
+    right: 20px;
+
+}
+
+.faq .container .topic li .answer {
+    display: none;
+    background: #ebeff4;
+    padding: 20px 15px;
+    line-height: 23px;
+    margin-bottom: 0;
+}
+
+.faq .container .topic>a {
+    padding: 15px 40px 15px 10px;
+    margin: 0 auto;
+    display: inline-block;
+    font-size: 14px;
+    font-family: Promo, Helvetica, Arial, sans-serif;
+    width: 300px;
+    border-radius: 3px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    color: #7e8e9e;
+}
+
+.faq .container .inline_left {
+    display: inline-block;
+    width: 500px;
+    margin-right: 90px;
+    vertical-align: top;
+}
+
+.faq .container .inline_right {
+    display: inline-block;
+    width: 500px;
+    vertical-align: top;
+}
+
+.frequestion {
+    width: 300px;
+    height: 50px;
+    padding: 15px 40px 15px 0;
+
+}
+
+.frequestion a {
+    text-decoration: none;
+    color: #7E8E9E;
+}
+
+.frequestion:hover {
+    text-decoration: underline;
+}
+
+.frequestion::after {
+    content: '\f061';
+    font: var(--fa-font-solid);
+    margin: 30px 10px 30px 0px;
+}
+
+
+/* sign up free ---------*/
+.sign {
+    width: 100%;
+    height: 110px;
+    background-color: #eef2f5;
+    font-family: Promo, Helvetica, Arial, sans-serif;
+}
+
+.signcenter {
+    margin: 0 auto;
+    width: 1140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 33px;
+
+}
+
+.centersignfree {
+    width: 650px;
+    height: 22px;
+    font-size: 17px;
+
+}
+
+.centersignfree::after {
+    content: '\f061';
+    font: var(--fa-font-solid);
+    margin: 0px 10px 0 14px;
+    font-size: 20px;
+}
+
+.centerfreeapi {
+    width: 200px;
+    height: 50px;
+    background-color: #f47b21;
+    ;
+    line-height: 50px;
+    text-align: center;
+    margin-left: 20px;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+.centerfreeapi:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* footer part--- */
+.footer {
+    display: flex;
+    height: 300px;
+    width: 100%;
+    background-color: #184157;
+    color: #ffffff;
+
+}
+
+.footercenter {
+    width: 1140px;
+    height: 300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer .footleft {
+    width: 300px;
+    height: 190px;
+    padding: 20px;
+    margin: 30px;
+}
+
+.footer .footleft a img {
+    width: 200px;
+}
+
+.footer .footleft .logo1 {
+    height: 20px;
+    margin: 5px;
+}
+
+.footer .footright {
+    width: 800px;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin: 30px;
+}
+
+.footer .footright div {
+    color: #ffffff;
+    height: 200px;
+    margin: 30px 30px 0 0;
+}
+
+.footer .footright a {
+    color: #ffffff;
+    padding: 20px 0;
+    text-decoration: none;
+}
+
+.footer .footright a:hover {
+    text-decoration: underline;
+}
+
+.footer .footright dl dh {
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-family: Promo, Helvetica, Arial, sans-serif;
+}
+
+.footer .footright dl dd {
+    font-size: 14px;
+    color: #ffffff;
+    padding: 10px 10px 0 0;
+}
+
+/* foot bottom part ----*/
+.footdown {
+    width: 100%;
+    height: 110px;
+    background-color: #184157;
+    color: #ffffff;
+
+}
+
+.footdowncenter {
+    width: 1140px;
+    height: 110px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footdown .copy1 a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footdown .copy a:hover {
+    text-decoration: underline;
+}
+
+.footdown .copy2 {
+    color: #ffffff;
+}
+
+.footdown .copy2 a {
+    color: #ffffff;
+}
